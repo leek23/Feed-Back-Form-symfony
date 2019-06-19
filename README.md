@@ -5,7 +5,7 @@ git pull
 composer install
 ```
 
-next step is setup .env file
+next step is setup .env file,
 set your database connection settings here
 
 ```
