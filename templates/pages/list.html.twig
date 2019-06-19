@@ -1,0 +1,30 @@
+{% extends "layouts/base.html.twig" %}
+
+{% block page %}
+    <style>
+        .wrap {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .item {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+    </style>
+<div class="wrap">
+    {% if list|length > 0 %}
+        {% for value in list %}
+            <div class="item">
+                <span>time : {{ value.time|date('Y-m-d H:i:s') }}</span>
+                <span>text : {{ value.text }}</span>
+            </div>
+        {% endfor %}
+        {% else %}
+        Wrong link
+    {% endif %}
+</div>
+{% endblock %}
+

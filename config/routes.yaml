@@ -1,0 +1,7 @@
+index:
+    path: /
+    controller: App\Controller\MainFormController::index
+
+list_messages:
+    path: /{slug}
+    controller: App\Controller\MessagesController::index

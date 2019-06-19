@@ -1,0 +1,10 @@
+<html lang="ru">
+    <body>
+        Form was sent
+
+        {% if main %}
+            <a href="{{ url('list_messages', {'slug': slug}) }}">link for all messages by this user</a>
+        {% endif %}
+
+    </body>
+</html>
